@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface GRPresenter : UIView
-
+-(void)configureWithObject:(id)anObject;
+-(NSMutableDictionary *)dictionaryEntity;
 @end
