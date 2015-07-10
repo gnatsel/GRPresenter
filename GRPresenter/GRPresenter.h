@@ -9,6 +9,22 @@
 #import <UIKit/UIKit.h>
 
 @interface GRPresenter : UIView
--(void)configureWithObject:(id)anObject;
+/**
+ * Configure the presenter's view with the given entity
+ *
+ * @param entity The entity to use to configure the view
+ * 
+ */
+-(void)configureWithEntity:(id)entity;
+
+/**
+ * @return an NSMutableDictionary representing the data of an entity;
+ */
 -(NSMutableDictionary *)dictionaryEntity;
+
+/**
+ * Should be called when you want to stop the loading of some UI elements (e.g : UIImage while 
+ * scrolling in UITableView)
+ */
+-(void)stopLoadingUI;
 @end

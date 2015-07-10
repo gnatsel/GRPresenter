@@ -10,18 +10,19 @@
 #import "GRPresenter.h"
 #import <objc/runtime.h>
 
-static char UIPresenter;
+static char UIGRPresenter;
 
-@implementation UIView (Presenter)
+@implementation UIView (GRPresenter)
 - (void)setPresenter:(GRPresenter *)presenter{
     [self willChangeValueForKey:@"GRPresenter"];
-    objc_setAssociatedObject(self, &UIPresenter,
+    objc_setAssociatedObject(self, &UIGRPresenter,
                              presenter,
-                             UIPresenter);
+                             UIGRPresenter);
     [self didChangeValueForKey:@"GRPresenter"];
 }
 
 - (GRPresenter *)presenter {
-    return objc_getAssociatedObject(self, &UIPresenter);
+    return objc_getAssociatedObject(self, &UIGRPresenter);
 }
+
 @end

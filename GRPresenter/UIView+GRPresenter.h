@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 @class GRPresenter;
 @interface UIView (GRPresenter)
+/**
+ * The presenter that will configure the layout of an entity
+ */
 @property (nonatomic, weak) IBOutlet GRPresenter *presenter;
 
 @end

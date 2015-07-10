@@ -10,12 +10,13 @@
 
 @implementation GRPresenter
 
--(void)configureWithObject:(id)anObject{
-    
+-(void)configureWithEntity:(id)entity{
 }
 
 -(NSMutableDictionary *)dictionaryEntity{
     return [NSMutableDictionary dictionary];
 }
-
+-(void)stopLoadingUI{
+    
+}
 @end
