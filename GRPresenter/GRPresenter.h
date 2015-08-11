@@ -2,8 +2,8 @@
 //  GRPresenter.h
 //  SampleGRPresenter
 //
-//  Created by Olivier Lestang [DAN-PARIS] on 22/06/2015.
-//  Copyright (c) 2015 TBWA. All rights reserved.
+//  Created by Gnatsel Reivilo on 22/06/2015.
+//  Copyright (c) Gnatsel Reivilo. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
